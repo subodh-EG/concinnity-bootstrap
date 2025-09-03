@@ -1,0 +1,185 @@
+:root {
+  --primary-orange: #ff7e00;
+  --text-gray: #595959;
+  --text-dark: #171717;
+  --success-green: #0abd8b;
+  --error-red: #ff4c00;
+  --light-bg: #f4f5f9;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.text-primary-orange {
+  color: var(--primary-orange);
+}
+
+.bg-primary-orange {
+  background-color: var(--primary-orange);
+}
+
+.border-primary-orange {
+  border-color: var(--primary-orange);
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.text-success {
+  color: var(--success-green);
+}
+
+.text-error {
+  color: var(--error-red);
+}
+
+.bg-light-custom {
+  background-color: var(--light-bg);
+}
+
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 126, 0, 0.05) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/grid-2.svg");
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-outline-orange {
+  border: 2px solid var(--primary-orange);
+  color: var(--primary-orange);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-orange:hover {
+  background-color: var(--primary-orange);
+  color: white;
+  border-color: var(--primary-orange);
+}
+
+.audit-card {
+  background: var(--light-bg);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #f0f2f1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.service-card {
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #f0f2f1;
+  box-shadow: 0 5px 20px rgba(57, 57, 57, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(57, 57, 57, 0.15);
+}
+
+.why-card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #f0f2f1;
+  transition: transform 0.3s ease;
+}
+
+.why-card.highlighted {
+  border-color: var(--primary-orange);
+  box-shadow: 0 8px 20px rgba(100, 100, 100, 0.1);
+}
+
+.why-card:hover {
+  transform: translateY(-3px);
+}
+
+.process-step {
+  text-align: center;
+}
+
+.process-number {
+  width: 40px;
+  height: 40px;
+  background: #f0f2f1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.client-logo {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.newsletter-section {
+  background: var(--primary-orange);
+  border-radius: 20px;
+}
+
+.progress-bar-custom {
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-segment {
+  height: 100%;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .audit-card {
+    margin-top: 2rem;
+  }
+
+  .service-card {
+    margin-bottom: 1rem;
+  }
+}
