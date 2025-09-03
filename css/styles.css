@@ -143,17 +143,6 @@ body {
   margin: 0 auto 20px;
 }
 
-.client-logo {
-  filter: grayscale(100%);
-  opacity: 0.7;
-  transition: all 0.3s ease;
-}
-
-.client-logo:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
 .newsletter-section {
   background: var(--primary-orange);
   border-radius: 20px;
